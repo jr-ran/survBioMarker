@@ -1,0 +1,12 @@
+Package: survBioMarker
+Type: Package
+Title: This package is to optimized gene set and survival analysis
+Version: 0.1.0
+Date: 2022-08-22
+Author: ranjianrong
+Maintainer: ranjianrong <ranjianrong@genomics.cn>
+Description: biomarker and survival
+License: GPL-3
+encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
