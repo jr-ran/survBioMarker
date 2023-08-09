@@ -28,8 +28,8 @@ cox_data_process <- function(data, var.names){
         return(value)
       }
       if(grepl("\\bajcc", x, ignore.case = T)){
-        ind1 <- which(grepl(paste("Stage ", "I{1,2}[A|B|C]?$", sep = ""), mydata, ignore.case = T, perl = T))
-        ind2 <- which(grepl(paste("Stage ", "(III[A|B|C]?)|(IV[A|B|C]?)$", sep = ""), mydata, ignore.case = T, perl = T))
+        ind1 <- which(grepl(paste("Stage ", ".*I{1,2}[A|B|C]?$", sep = ""), mydata, ignore.case = T, perl = T))
+        ind2 <- which(grepl(paste("Stage ", ".*(III[A|B|C]?)|(IV[A|B|C]?)$", sep = ""), mydata, ignore.case = T, perl = T))
         value[ind1] <- "Stage_I/II"
         value[ind2] <- "Stage_III/IV"
         return(value)
